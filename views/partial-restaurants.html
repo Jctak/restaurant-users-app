@@ -1,0 +1,25 @@
+<section class='section'>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th style="text-align:center;">Restaurant</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Menu</th>
+      </tr>
+    </thead>
+    ${restaurantList.map(rest =>
+      `<tr>
+        <td>${rest.name}</td>
+        <td>${rest.street}</td>
+        <td>${rest.city}</td>
+        <td>${rest.state}</td>
+        <td>${rest.menu}</td>
+      </tr>`
+      ).join('')}
+  </table>
+</section>
